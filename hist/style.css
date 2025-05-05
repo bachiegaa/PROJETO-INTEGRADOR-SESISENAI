@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY - Fonte e layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4f0958;
+    color: #482c50;
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #334155;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+    background-color: #475569;
+    transform: translateY(-1px);
+}
+
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #ffe0ff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* SUBTÍTULOS */
+h3 {
+    font-size: 1.8em;
+    margin: 40px 0 20px;
+    color: #912bc0;
+    border-left: 6px solid #912bc0;
+    padding-left: 14px;
+    background-color: #fbe9e7;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+/* PARÁGRAFOS COMO CARDS */
+p {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: justify;
+}
+
+/* LINKS */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffe0ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffe0ff;
+    text-decoration: underline;
+}
+
+/* IMAGENS */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 30px auto 10px;
+    display: block;
+    border: 5px solid #eaeaea;
+
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+/* NEGRITO COM DESTAQUE */
+b {
+    color: #5c1272;
+}
+
+/* IFRAME (Jogo Educacional) */
+iframe {
+    display: block;
+    margin: 30px auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.footer{
+   
+    color: #ffffff;
+    padding: 20px ; 
+    text-align: center;
+  
+}
+
+.audio{
+    height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;  /* Centraliza horizontalmente */
+      align-items: center;      /* Centraliza verticalmente */
+}

@@ -1,0 +1,182 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('azul.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  #box-fechada {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #444;
+    border: 4px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  #box-fechada:hover {
+    transform: scale(1.05);
+    background-color: #666;
+  }
+  
+  .cenario-interno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    animation: fadeIn 1s ease;
+  }
+  
+  .elemento {
+    font-size: 2.5rem;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+  }
+  
+  #gato-super {
+    width: 150px;
+    opacity: 0.5;
+    animation: blink 1s infinite;
+  }
+  
+  #gato-final {
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+  
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f8bbd0;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #f48fb1;
+  }
+  
+  #resultado {
+    font-size: 1.5em;
+    margin-top: 15px;
+  }
+  
+  /* Animações */
+  @keyframes blink {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .caixa{
+    position: relative; 
+    display: inline-block;
+  }
+
+  .texto{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold;
+  }
+
+  /* Estrelas de Avaliação */
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ddd; /* Cor inicial das estrelas */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.star.filled {
+  color: rgb(46, 191, 188); /* Cor das estrelas preenchidas */
+}
+
+#rating-text {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+audio {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.rodape {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #475569;
+  background-color: #f1f5f9;
+  padding: 20px;
+  border-top: 2px solid #cbd5e1;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 0; 
+}
+
+.rodape p {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.btn-voltar {
+  display: inline-block;
+  background-color: #334155;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+  background-color: #475569;
+  transform: translateY(-1px);
+}

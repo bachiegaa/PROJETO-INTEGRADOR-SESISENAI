@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biologia</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <a href="../index.html" class="btn-voltar">← Voltar</a>
+
+    <fieldset>
+        <legend>
+            Equinodermos: Maravilhas do Oceano
+        </legend>
+        <img src="https://i.pinimg.com/originals/6b/98/e1/6b98e1fcbcfc599c0ee4109fb489287f.png" alt="estrela do mar"
+            class="legend-img">
+    </fieldset>
+    <div class="pesquisa-container">
+        <div class="pesquisa">
+            <h1>Resumo sobre Equinodermos</h1>
+            <p><strong>Equinodermos</strong> são animais exclusivamente marinhos, pertencentes ao filo
+                <em>Echinodermata</em>, com cerca de 7.000 espécies atuais. Vivem no fundo do mar e possuem simetria
+                radial na fase adulta (pentarradial) e bilateral na fase larval. Surgiram no período Cambriano.
+            </p>
+
+
+
+            <h2>Características Gerais</h2>
+            <ul>
+                <li><strong>Endoesqueleto:</strong> Formado por placas calcárias e coberto por epiderme.</li>
+                <li><strong>Sistema hidrovascular:</strong> Movimenta os pés ambulacrais, responsáveis pela locomoção e
+                    fixação.</li>
+                <li><strong>Sistema digestivo:</strong> Completo, com digestão extracelular e intracelular.</li>
+                <li><strong>Sistema nervoso:</strong> Com anel nervoso ao redor da boca e nervos radiais.</li>
+                <li><strong>Células especializadas:</strong> Sensoriais, pigmentares, de defesa e de rigidez corporal.
+                </li>
+            </ul>
+
+
+
+            <h2>Principais Classes</h2>
+            <ul>
+                <li><strong>Asteroidea:</strong> Estrelas-do-mar (predadoras, regeneram braços).</li>
+                <li><strong>Ophiuroidea:</strong> Ofiúros (rápidos e flexíveis).</li>
+                <li><strong>Echinoidea:</strong> Ouriços-do-mar e bolachas-do-mar (espinhos móveis e lanterna de
+                    Aristóteles).</li>
+                <li><strong>Holothuroidea:</strong> Pepinos-do-mar (tentáculos orais e ejeção de vísceras).</li>
+                <li><strong>Crinoidea:</strong> Lírios-do-mar (sésseis ou móveis, braços ramificados).</li>
+            </ul>
+
+
+
+            <h2>Alimentação</h2>
+            <p>A alimentação varia por classe: predadores, filtradores ou detritívoros. Exemplos incluem estrelas-do-mar
+                que evertam o estômago sobre a presa; ouriços raspando algas; e pepinos capturando partículas orgânicas
+                com tentáculos modificados.</p>
+
+
+
+            <h2>Reprodução</h2>
+            <p>A reprodução pode ser <strong>assexuada</strong> (regeneração) ou <strong>sexuada</strong> (liberação de
+                gametas na água, favorecendo diversidade genética).</p>
+
+
+
+            <h2>Ciclo de Vida</h2>
+            <p>O ciclo de vida dos equinodermos inclui fases de larva (simetria bilateral) e adulto (simetria
+                pentarradial). Algumas espécies passam por metamorfose.</p>
+
+
+
+            <h2>Importância Ecológica</h2>
+            <p>Os equinodermos desempenham papéis essenciais nos ecossistemas marinhos: mantêm o equilíbrio das cadeias
+                alimentares, reciclam nutrientes e aumentam a diversidade genética e ambiental. Eles também participam
+                da saúde dos ecossistemas marinhos.</p>
+
+        </div>
+        <div class="imagem">
+            <img src="https://www.mundoecologia.com.br/wp-content/uploads/2020/03/Equinodermos-6-1.jpg">
+            <video width="1100" height="720" controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+              </video>
+        </div>
+
+    </div>
+
+
+    <fieldset>
+        <legend>
+            Quiz Equinodermos:
+        </legend>
+        <img src="https://static.vecteezy.com/system/resources/previews/024/090/463/non_2x/red-seaweed-plant-free-png.png"
+            alt="estrela do mar" class="legend-img">
+
+    </fieldset>
+    <br>
+    <br>
+    <div class="cor"></div>
+    <form id="quizForm">
+        <h1>Quiz de Conhecimentos Gerais</h1>
+        <div class="pergunta">
+
+            <div class="opcoes">
+                <p>1. Qual é a função do sistema hidrovascular nos equinodermos?</p>
+                <button type="button" onclick="selecionarOpcao(this, 'q1', 'errado')">Digestão dos alimentos</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q1', 'errado')">Circulação do sangue</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q1', 'certo')">Locomoção e fixação dos pés
+                    ambulacrais</button>
+            </div>
+        </div>
+
+
+        <div class="pergunta">
+            <p>Qual classe de equinodermos possui espinhos móveis e a lanterna de Aristóteles?</p>
+            <div class="opcoes">
+                <button type="button" onclick="selecionarOpcao(this, 'q2', 'certo')">Echinoidea</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q2', 'errado')">Holothuroidea</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q2', 'errado')"> Crinoidea</button>
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <p> Como as estrelas-do-mar se alimentam?</p>
+            <div class="opcoes">
+                <button type="button" onclick="selecionarOpcao(this, 'q3', 'errado')">Usam tentáculos para filtrar
+                    partículas</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q3', 'errado')">Raspam algas com os
+                    espinhos</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q3', 'certa')"> Evertendo o estômago sobre a
+                    presa</button>
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <p>Como ocorre a reprodução sexuada dos equinodermos?</p>
+            <div class="opcoes">
+                <button type="button" onclick="selecionarOpcao(this, 'q4', 'errado')">Pela regeneração de partes do
+                    corpo</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q4', 'certo')">Pela liberação de gametas na
+                    água</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q4', 'errado')"> Por brotamento</button>
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <p> Qual tipo de simetria os equinodermos apresentam na fase adulta?</p>
+            <div class="opcoes">
+                <button type="button" onclick="selecionarOpcao(this, 'q5', 'errado')"> Bilateral</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q5', 'certo')"> Pentarradial </button>
+                <button type="button" onclick="selecionarOpcao(this, 'q5', 'errado')">Assimétrica</button>
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <p>Qual das funções abaixo os equinodermos realizam nos ecossistemas marinhos?</p>
+            <div class="opcoes">
+                <button type="button" onclick="selecionarOpcao(this, 'q6', 'errado')"> Produzem oxigênio
+                    atmosférico</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q6', 'certo')"> Mantêm o equilíbrio das cadeias
+                    alimentares </button>
+                <button type="button" onclick="selecionarOpcao(this, 'q6', 'errado')"> Poluem a água com
+                    excreções</button>
+            </div>
+        </div>
+
+        <div class="pergunta">
+            <p>Qual das seguintes características é comum aos equinodermos na fase adulta?</p>
+            <div class="opcoes">
+                <button type="button" onclick="selecionarOpcao(this, 'q7', 'certo')">Simetria radial
+                    pentarradial</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q7', 'errado')">Sistema nervoso sem anel
+                    nervoso</button>
+                <button type="button" onclick="selecionarOpcao(this, 'q7', 'errado')"> Sistema digestivo
+                    incompleto</button>
+            </div>
+        </div>
+
+
+        <div class="enviar">
+            <button type="button" onclick="verificarRespostas()">Enviar</button>
+
+        </div>
+
+        <div id="resultado"></div>
+        <br><br>
+
+        <div class="estrela">
+            <img src="https://png.pngtree.com/element_pic/00/16/09/0157c760c78f014.png" alt="Imagem sobre Equinodermos">
+        </div>
+
+        <div class="ouriço">
+
+            <img
+                src="https://png.pngtree.com/png-clipart/20220704/ourmid/pngtree-3d-summer-starfish-illustration-png-image_5684936.png">
+        </div>
+        </div>
+    </form>
+
+    <div id="resultado"></div>
+
+
+    <script src="biologia.js"></script>
+
+    <footer class="rodape">
+        <p>© 2025 Projeto Integrador SESI/SENAI - 2ºB. 🌊 Desenvolvido por Manuela Alves Felix • Projeto Educacional Equinodermos.</p>
+      </footer>
+
+</body>
+
+</html>

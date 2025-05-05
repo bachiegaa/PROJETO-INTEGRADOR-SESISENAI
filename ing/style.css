@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e tipografia */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+.content-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1.1em;
+    line-height: 2;
+    color: #555;
+}
+
+.content-box b {
+    color: #007BFF;
+}
+
+table {
+    margin-bottom: 5px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    width: 87%;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2em;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+tr:hover td {
+    background-color: #e2e2e2;
+}
+
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 380px;
+    border: none;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Pequenos ajustes de responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+}
+
+.rodape {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #475569;
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-top: 2px solid #cbd5e1;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0; /* Agora é quadrado */
+}
+
+.rodape p {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #334155;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+    background-color: #475569;
+    transform: translateY(-1px);
+}
+

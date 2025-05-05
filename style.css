@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f0f4ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #1e293b;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #334155;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+button:hover {
+    
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.321)),
+    url('https://pt.quizur.com/_image?href=https://img.quizur.com/f/img6514cd7ec6b684.51033262.jpg?lastEdited=1695862150&w=600&h=600&f=webp');}
+
+.lp{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.321)),
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_C6R0jPHhfiBc941KDtTqpVHGZYYVQWjRLw&s');
+}
+
+.mat{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.321)),
+    url('https://img.freepik.com/fotos-gratis/ferramentas-esportivas_53876-138077.jpg?semt=ais_hybrid&w=740');
+}
+
+.hist{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.321)),
+    url('https://outraspalavras.net/wp-content/uploads/2019/04/greve1.jpeg');
+}
+
+
+.qui{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.321)),
+    url('https://images.jota.info/wp-content/uploads/2019/05/6a4120be23c814f80233ecbb34e71adc.jpeg');
+}
+
+.ing{
+    background-color:#4888cd;
+}
+
+.geo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.321)),
+    url('https://pt.quizur.com/_image?href=https://img.quizur.com/f/img648c54f9dbb485.15087835.jpg?lastEdited=1686918397&w=600&h=600&f=webp');
+}
+
+.ing{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.321)),
+    url('https://idiomas.proddigital.com.br/wp-content/uploads/sites/4/ingles-americano-e-britanico.jpg');
+}
+
+.fis{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.321)),
+    url('https://professorpinguim.com.br/blog/wp-content/uploads/2020/07/meca%CC%82nica-quantica-2.jpg');
+}

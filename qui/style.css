@@ -1,0 +1,209 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de cores em tons de verde */
+:root {
+    --primary-color: #4a5b62;
+    /* Cor base */
+    --secondary-color: #6e7f88;
+    /* Tom mais claro para o degradê */
+    --background-color: #3b4c54;
+    /* Tom mais escuro para o degradê */
+    --text-color: #333;
+    --heading-color: #1b5e20;
+    --card-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Corpo do site */
+body {
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    background-image: url('fundo4.png');
+    /* Caminho relativo da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4a5b62;
+}
+
+.img {
+    display: flex;
+    gap: 88px;
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 50%;
+    width: 50%;
+    margin-left: 4%;
+}
+
+.img img {
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    /* Transição suave para a imagem */
+}
+
+.img:hover img {
+    transform: scale(1.1);
+    /* Efeito de zoom na imagem */
+}
+
+
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.titulo {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Seções como "cards" */
+section {
+    background-color: var(--card-bg);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px var(--shadow-color);
+}
+
+/* Títulos das seções */
+h2 {
+    font-size: 1.8rem;
+    color: #2b5054;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+    font-family: Georgia;
+}
+
+/* Parágrafos */
+p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+    color: #444;
+    font-family: Georgia;
+    ;
+}
+
+.mapa {
+    width: 70%;
+    height: 70%;
+    background-color: #2b5054;
+    /* Fundo escurecido semi-transparente para melhor leitura */
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.pod {
+    background-color: rgb(255, 255, 255);
+    /* Fundo branco */
+    padding: 20px;
+    /* Espaçamento interno */
+    margin: 20px auto;
+    /* Centraliza o contêiner */
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    width: 960px;
+    border-radius: 15px;
+
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.rodape {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #475569;
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-top: 2px solid #cbd5e1;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0; /* Agora é quadrado */
+}
+
+.rodape p {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #334155;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+    background-color: #475569;
+    transform: translateY(-1px);
+}

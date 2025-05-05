@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gato de Schrödinger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="../index.html" class="btn-voltar">← Voltar</a>
+  <h1>GATO DE SCHRÖDINGER</h1>
+  <div id="sobre-experimento">
+
+ <p> A física quântica é um dos campos mais fascinantes e misteriosos da ciência, com conceitos que desafiam a nossa compreensão da realidade.<br>
+   Um dos exemplos mais intrigantes dessa complexidade é o famoso experimento mental proposto por Erwin Schrödinger: o Gato de Schrödinger.<br>
+    Neste experimento, um gato é colocado dentro de uma caixa, e seu destino (vivo ou morto) depende de um evento quântico aleatório, que só é definido quando observado.<br>
+    <p></p>
+"Gato de Schrödinger" é um jogo interativo inspirado nesse experimento, onde você pode explorar a superposição quântica de uma forma divertida e educativa.<br>
+ A cada passo, você vai vivenciar a incerteza do estado do gato até que ele seja observado, colapsando sua função de onda.<br>
+  Além disso, o jogo oferece uma avaliação para saber o que você achou da experiência, permitindo que você compartilhe sua opinião sobre esse desafio quântico.<br>
+
+Prepare-se para uma jornada intrigante no mundo da física quântica — onde o impossível se torna possível!</p>
+
+    <h3>Quem foi Erwin Schrödinger?</h3>
+    <img src="https://media.gettyimages.com/id/515582950/pt/foto/the-1933-nobel-prize-in-physics-has-been-awarded-jointly-to-professor-p-h-m-dirac-of-cambridge.jpg?s=612x612&w=gi&k=20&c=EIEaeBNEIYmLv0hX9MSBOkE_PeK2HlEYIXn0UYjNdH4=" width="250px" />
+    <p>Erwin Schrödinger (1887 / 1961) foi um físico teórico austríaco, um dos principais responsáveis pelo desenvolvimento da mecânica quântica.<br>
+       Ele é famoso por seu experimento mental envolvendo um gato, que ilustra um dos aspectos mais estranhos da mecânica quântica, 
+       onde as partículas podem existir em múltiplos estados ao mesmo tempo até serem observadas.</p>
+
+    <h3>Como funciona o experimento ?</h3>
+    <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2024/12/ilustracao-do-gato-de-schrodinger.jpg" width="250px" />
+    <p>O experimento mental de Schrödinger descreve uma situação onde um gato é colocado dentro de uma caixa fechada com uma fonte radioativa,<br>
+       um martelo e um frasco de veneno. Se a fonte radioativa se desintegrar, o martelo quebra o frasco e o veneno mata o gato. <br>
+       A mecânica quântica sugere que, enquanto a caixa estiver fechada, o gato está simultaneamente vivo e morto, um estado chamado "superposição".<br>
+        Apenas ao abrir a caixa é que o estado do gato é definido.</p>
+        <h2>Ouça o podcast sobre o experimento</h2>
+
+        <audio controls>
+          <source src="Vocaroo 11j2vCXWRgwh.mp3" type="audio/mpeg">
+          Seu navegador não suporta o player de áudio.
+        </audio>
+        
+<br><p></p>
+
+
+
+    <button id="iniciar-jogo" onclick="iniciarJogo()">Iniciar o Jogo</button>
+  </div>
+
+  <div id="fase1" style="display: none;">
+    <div id="box-fechada" onclick="entrarNaCaixa()">
+      <img src="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-open-box-top-view-png-image_4760812.png" alt="Abrir Caixa" />
+    </div>
+    <div>
+      <br><h1>O que tem na caixa?</h1>
+    </div>
+  </div>
+  
+
+
+  <div id="fase2" style="display: none;">
+    <div class="cenario-interno">
+      <div class="elemento" id="rad" title="Fonte Radioativa" onclick="mostrarExplicacao('Fonte Radioativa: Uma substância com chance de se desintegrar a qualquer momento, liberando radiação que pode ativar o mecanismo do veneno.')">☢️</div>
+      <div class="elemento" id="martelo" title="Martelo" onclick="mostrarExplicacao('Martelo: Acionado pela fonte radioativa, ele quebra o frasco de veneno, liberando-o e matando o gato.')">🔨</div>
+      <div class="elemento" id="veneno" title="Veneno" onclick="mostrarExplicacao('Veneno: Se o martelo for acionado, ele quebra um frasco com veneno que mata o gato.')">🧪</div>
+      <img id="gato-super" src="https://images.vexels.com/media/users/3/272048/isolated/preview/ffe477e3c59bce60b203051f33628276-gato-preto-de-desenho-animado-sentado.png" alt="Gato Quântico">
+    </div>
+
+    
+    <button onclick="colapsarEstado()">Abrir a Caixa</button>
+    <div id="resultado"></div>
+    <img id="gato-final" src="" alt="Resultado" style="display: none;" />
+    <button onclick="resetarJogo()">Reiniciar</button>
+  </div>
+
+
+  <div id="pesquisa" class="pesquisa-container" style="display:none;">
+    <h2>Pesquisa sobre o jogo</h2>
+    <form id="formPesquisa">
+      <div class="stars" id="stars">
+        <span class="star" onclick="setRating(1)">&#9733;</span>
+        <span class="star" onclick="setRating(2)">&#9733;</span>
+        <span class="star" onclick="setRating(3)">&#9733;</span>
+        <span class="star" onclick="setRating(4)">&#9733;</span>
+        <span class="star" onclick="setRating(5)">&#9733;</span>
+      </div>
+      <p id="rating-text">Avaliação: 0 estrela(s)</p>
+
+   
+    </form>
+   
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer class="rodape">
+    © 2025 Projeto Integrador SESI/SENAI - 2ºB. Todos os direitos reservados para Thariany dos Santos.
+  </footer>
+</body>
+</html>

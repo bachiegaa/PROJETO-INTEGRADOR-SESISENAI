@@ -1,0 +1,201 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Tipografia geral */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #ce7114, #f5d004); /* Roxo para dourado */
+    color: #f7f4f4;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 5px;
+  }
+  
+  /* Cabeçalhos */
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #f5dfb2;
+    text-shadow: 2px 2px #000;
+  }
+  
+  h2 {
+    color: #f9f6f6;
+    font-size: 2rem;
+    border-bottom: 2px solid #FDB927;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+  
+  h3 {
+    color: #f7f5f7;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  
+  /* Parágrafos e textos */
+  p, li {
+    font-size: 1.2rem; /* Aumentado de 1rem para 1.2rem */
+    margin-bottom: 12px;
+    margin-left: 0;
+    padding-left: 20px;
+   
+  }
+  
+  /* Listas */
+  .lista {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 20px;
+   
+  }
+  
+  .lista li {
+    font-size: 1.2rem; /* Aplica também à lista de estatísticas dos Lakers */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 6px;
+    border-radius: 5px;
+  }
+  ul {
+    margin-left: 0;
+    padding-left: 20px; /* Pode reduzir para 10px ou até 0 se quiser mais colado à esquerda */
+  }
+  
+  /* Imagem do time */
+  img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 3px solid #FDB927;
+    border-radius: 10px;
+   
+  }
+  .imagens-lado-a-lado {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 20px; /* espaço entre as imagens */
+    flex-wrap: wrap; /* permite que quebrem em telas menores */
+    margin-bottom: 20px;
+  }
+  
+  .imagens-lado-a-lado img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 200px; /* ajuste conforme quiser a altura */
+  }
+ 
+  
+  /* Blocos de conteúdo */
+  div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Vídeo */
+  .video {
+    background-color: #000;
+    color: #FDB927;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 2px dashed #FDB927;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  /* Pre formatado (códigos ou contas) */
+  pre {
+    font-size: 1.1rem; /* Levemente maior para leitura confortável */
+    background-color: #222;
+    color: #0f0;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Exercícios e respostas */
+  .exercicios hr,
+  .resposta hr {
+    border: 1px solid #FDB927;
+    margin: 20px 0;
+  }
+  
+  /* Tabela (se houver) */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  table, th, td {
+    border: 1px solid #FDB927;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Links */
+  a {
+    color: #FDB927;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .rodape {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #475569;
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-top: 2px solid #cbd5e1;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0; /* Agora é quadrado */
+}
+
+.rodape p {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #334155;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+    background-color: #475569;
+    transform: translateY(-1px);
+}
