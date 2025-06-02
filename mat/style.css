@@ -1,166 +1,109 @@
 /* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Tipografia geral */
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #ce7114, #f5d004); /* Roxo para dourado */
-    color: #f7f4f4;
-    line-height: 1.6;
-    padding: 20px;
-    margin: 5px;
-  }
-  
-  /* Cabeçalhos */
-  h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 15px;
-    font-weight: 700;
-    padding: 10px;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    color: #f5dfb2;
-    text-shadow: 2px 2px #000;
-  }
-  
-  h2 {
-    color: #f9f6f6;
-    font-size: 2rem;
-    border-bottom: 2px solid #FDB927;
-    padding-bottom: 5px;
-    margin-top: 30px;
-  }
-  
-  h3 {
-    color: #f7f5f7;
-    font-size: 1.4rem;
-    margin-top: 20px;
-    margin-left: 0;
-    padding-left: 20px;
-  }
-  
-  /* Parágrafos e textos */
-  p, li {
-    font-size: 1.2rem; /* Aumentado de 1rem para 1.2rem */
-    margin-bottom: 12px;
-    margin-left: 0;
-    padding-left: 20px;
-   
-  }
-  
-  /* Listas */
-  .lista {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 20px;
-   
-  }
-  
-  .lista li {
-    font-size: 1.2rem; /* Aplica também à lista de estatísticas dos Lakers */
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-bottom: 6px;
-    border-radius: 5px;
-  }
-  ul {
-    margin-left: 0;
-    padding-left: 20px; /* Pode reduzir para 10px ou até 0 se quiser mais colado à esquerda */
-  }
-  
-  /* Imagem do time */
-  img {
-    display: block;
-    margin: 0 auto 20px auto;
-    border: 3px solid #FDB927;
-    border-radius: 10px;
-   
-  }
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e plano de fundo geral */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f8fc;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho principal */
+h1, h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #000000;
+  margin-top: 20px;
+}
+
+/* Links e botão de voltar */
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Vídeo centralizado */
+.video {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Imagens lado a lado */
+.imagens-lado-a-lado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imagens-lado-a-lado img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table.estatisticas {
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.95rem;  
+  max-width: 600px;
+  margin: 40px auto; 
+}
+
+table.estatisticas thead {
+  background-color: #6b3f98;
+  color: white;
+}
+
+table.estatisticas th,
+table.estatisticas td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+table.estatisticas tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Imagem de fórmulas */
+.imagem {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
   .imagens-lado-a-lado {
-    display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    gap: 20px; /* espaço entre as imagens */
-    flex-wrap: wrap; /* permite que quebrem em telas menores */
-    margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .imagens-lado-a-lado img {
-    border-radius: 10px;
-    object-fit: cover;
-    height: 200px; /* ajuste conforme quiser a altura */
+
+  .video iframe {
+      width: 100%;
+      height: auto;
   }
- 
-  
-  /* Blocos de conteúdo */
-  div {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  }
-  
-  /* Vídeo */
-  .video {
-    background-color: #000;
-    color: #FDB927;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 15px;
-    border: 2px dashed #FDB927;
-    margin: 20px auto;
-    width: 80%;
-  }
-  
-  /* Pre formatado (códigos ou contas) */
-  pre {
-    font-size: 1.1rem; /* Levemente maior para leitura confortável */
-    background-color: #222;
-    color: #0f0;
-    padding: 15px;
-    border-radius: 8px;
-    overflow-x: auto;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
-  /* Exercícios e respostas */
-  .exercicios hr,
-  .resposta hr {
-    border: 1px solid #FDB927;
-    margin: 20px 0;
-  }
-  
-  /* Tabela (se houver) */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-  
-  table, th, td {
-    border: 1px solid #FDB927;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Links */
-  a {
-    color: #FDB927;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+}
+
 
   .rodape {
     margin-top: 40px;
@@ -198,4 +141,89 @@
 .btn-voltar:hover {
     background-color: #475569;
     transform: translateY(-1px);
+}
+
+
+.exercicio {
+  border: 1px solid rgb(89, 36, 142);
+  border-color: rgb(89, 36, 142);
+  border-width: 2px;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.resposta {
+  display: none;
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.ver-resposta {
+  background-color: rgb(89, 36, 142);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ver-resposta:hover {
+  background-color: #641eaf;
+}
+
+.texto{
+  background-color: rgb(255, 254, 254);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #000000; /* Púrpura suave */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos dos parágrafos e listas dentro dos cards */
+.card p, .card ul {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.card pre {
+  font-size: 1rem;
+  background-color: #f7fafc;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Imagem dentro do card */
+.card .imagem img {
+  border-radius: 8px;
+  max-width: 100%;
+  display: block;
+  margin: 20px 0;
+}
+
+/* Estilo do hover nos cards */
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
