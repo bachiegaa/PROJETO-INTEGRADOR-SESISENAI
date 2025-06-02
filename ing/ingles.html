@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Integrador SESI/SENAI- Inglês</title>
+    <title>Projeto Integrador SESI/SENAI - Inglês</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <a href="../index.html" class="btn-voltar">← Voltar</a>
 
-    <h1>Grammar Structures and Exercises</h1>
+<div class="sidebar">
+    <a href="#grammar-structures">Grammar Structures</a>
+    <a href="#present-perfect">Present Perfect</a>
+    <a href="#present-continuous">Present Continuous</a>
+    <a href="#atividade-revisao">Atividade para revisão</a>
+    <a href="#jogo-tempos-verbais">Jogo sobre os tempos verbais</a>
+    <a href="#podcast">Podcast</a>
+</div>
+
+<div class="main-content">
+    <a href="../index.html" class="btn-voltar">← Voltar</a><br>
+
+    <h1 id="grammar-structures">Grammar Structures</h1>
 
     <div class="content-box">
         <p>A língua inglesa, assim como qualquer outro idioma, possui uma estrutura gramatical complexa e 
@@ -30,7 +42,7 @@
         versatilidade em expressar ações que ocorrem em tempos distintos e com diferentes relações com o momento presente.</p>
     </div><br>
 
-    <h2>Present Perfect</h2>
+    <h2 id="present-perfect">Present Perfect</h2>
     <div class="content-box">
         <p>O Present Perfect é usado para descrever ações que ocorreram em um momento não especificado no passado, 
         mas que têm algum tipo de conexão com o presente. Ou seja, não sabemos exatamente quando a ação ocorreu, 
@@ -67,9 +79,16 @@
                 <td><b>Have</b> you <strong>visited</strong> that place?</td>
             </tr>
         </tbody>
-    </table><br>
+    </table>
+    <div class="button-container">
+        <audio id="audio1" src="present-perfect.mp3"></audio>
+        <button id="playBotao1" onclick="Audio1()">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
 
-    <h2>Present Continuous</h2>
+
+    <h2 id="present-continuous">Present Continuous</h2>
     <div class="content-box">
         <p>O Present Continuous (também chamado de Present Progressive) é usado para descrever ações que estão 
         acontecendo no momento da fala ou para falar de situações temporárias. Ele também pode ser usado para 
@@ -105,25 +124,62 @@
                 <td><b>Are</b> they <strong>playing</strong> outside?</td>
             </tr>
         </tbody>
-    </table><br>
+    </table>
+    <div class="button-container">
+        <audio id="audio2" src="present-continuous.mp3"></audio>
+        <button id="playBotao2" onclick="Audio2()">
+            <i id="icon" class="fas fa-play"></i>
+        </button>
+    </div>
 
-    <h2>Atividade para revisão do conteúdo</h2>
+
+
+    <h2 id="atividade-revisao">Atividade para revisão do conteúdo</h2>
     <div class="content-box">
         <iframe src="https://wordwall.net/pt/embed/33b68661b8d14ea8ac1cff94ee0ebc15?themeId=1&templateId=5&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
-    </div>
+    </div><br>
     
-    <h2>Jogo sobre os tempos verbais</h2>
+
+
+    <h2 id="jogo-tempos-verbais">Jogo sobre os tempos verbais</h2>
     <div class="content-box">
         <iframe src="https://wordwall.net/pt/embed/c7ae8963223c454da3937eb25d05201e?themeId=1&templateId=36&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
-    </div>
+    </div><br>
 
-    <h2>Podcast</h2>
-    <div class="content-box">
-        
+
+
+    <h2 id="podcast">Podcast</h2>
+<div class="content-box">
+    <div class="podcast-player">
+        <button class="backward-btn"><i class="fas fa-backward"></i></button>
+        <button class="play-btn"><i class="fas fa-play"></i></button>
+        <button class="forward-btn"><i class="fas fa-forward"></i></button>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <span class="time">0:00</span>
     </div>
+    <audio id="podcast-audio">
+        <source src="podcast-ingles.mp3" type="audio/mpeg">
+    </audio>
+</div>
 
     <footer class="rodape">
         <p>© 2025 Projeto Integrador SESI/SENAI. Todos os direitos reservados para Kauã Bachiega Graciano.</p>
     </footer>
+</div>
+<script src="ingles.js"></script>
+
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 </html>
