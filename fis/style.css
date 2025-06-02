@@ -143,40 +143,23 @@ audio {
   max-width: 400px;
 }
 
-.rodape {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #475569;
-  background-color: #f1f5f9;
-  padding: 20px;
-  border-top: 2px solid #cbd5e1;
-  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
-  border-radius: 0; 
-}
-
-.rodape p {
-  margin: 0;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-}
-
-.btn-voltar {
-  display: inline-block;
-  background-color: #334155;
+header {
+  background-color: #1b376d;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
 }
 
-.btn-voltar:hover {
-  background-color: #475569;
-  transform: translateY(-1px);
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #3a68b7;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #5b84d1;
 }
