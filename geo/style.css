@@ -1,0 +1,378 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 0;
+    align-items: left;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    align-items: left;
+}
+
+main {
+    padding: 20px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-left: 5px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #000000;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.header-secundario {
+    background-color: #000000;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-principal {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.menu-topicos ul   {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-left: 35%;
+}
+
+.menu-topicos a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.menu-topicos a:hover {
+    background-color: #000000;
+}
+
+.introducao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.preço {
+    align-items: center;
+}
+
+.centro {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+audio {
+    width: 900px;
+    /* você pode ajustar esse valor */
+    height: 100px;
+    /* altura geralmente não afeta muito o player */
+}
+h2 {
+    text-align: center;
+    color: #c2c2c2;
+    margin-bottom: 20px;
+  }
+
+  .tabela-container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  thead {
+    background: linear-gradient(to right, #dbdbdb, #f6f6f6);
+    color: #fff;
+  }
+
+  th, td {
+    padding: 16px 20px;
+    text-align: left;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  td {
+    color: #444;
+  }
+
+  th:first-child, td:first-child {
+    border-left: 5px solid #000000;
+  }
+
+
+
+
+
+  
+  h2 {
+    text-align: center;
+    color: #b8b8b8;
+    margin-bottom: 20px;
+  }
+
+  .tabela-coluna {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 3000px;
+    margin: 0 auto;
+  }
+
+  .coluna {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 330px; /* ← AQUI você altera o comprimento (largura) */
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  .coluna:hover {
+    transform: translateY(-5px);
+
+  }
+
+  .titulo {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+
+  .conteudo {
+    font-size: 1rem;
+    color: #444;
+  }
+
+
+
+  
+  h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  th, td {
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    color: #000000;
+    width: 220px;
+    font-size: 1.05rem;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+
+  td {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+
+
+
+
+  .exemplodados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 3000px;
+    margin: 0 auto;
+  }
+
+  .dados {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 1400px; /* ← AQUI você altera o comprimento (largura) */
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 40px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 18px 20px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #eeeeee;
+    color: #000000;
+    font-weight: 600;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #fafafa;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: #ffffff;
+  }
+  
+  tr:hover td {
+    background-color: #e4e4e4;
+  }
+  
+  .cabecalho {
+    background-color: #444;
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  th:first-child {
+    width: 460px;
+  }
+  
+
+
+
+
+  
+  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .card ul {
+    padding-left: 20px;
+  }
+
+  .card ul li {
+    margin-bottom: 5px;
+  }
+
+  .title-section {
+    background: #e5e5e5;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .content-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .content-box .card {
+    flex: 1 1 300px;
+  }
