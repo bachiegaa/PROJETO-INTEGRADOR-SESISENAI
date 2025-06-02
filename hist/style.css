@@ -132,6 +132,24 @@ iframe {
     margin: 0 auto;
 }
 
+.btn-voltar {
+    display: inline-block;
+    background-color: #334155;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+    background-color: #475569;
+    transform: translateY(-1px);
 .slides {
     display: flex;
     width: 100%;
